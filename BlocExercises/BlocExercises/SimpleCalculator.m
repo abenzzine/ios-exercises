@@ -19,7 +19,6 @@
 - (NSInteger) addNumber:(NSInteger) number1 toNumber:(NSInteger) number2 {
     /* WORK HERE */
     number1 += number2;
-    
     return number1;
 }
 
