@@ -12,11 +12,14 @@
 
 - (NSInteger) increaseNumberBy1:(NSInteger) number {
     /* WORK HERE */
+    number +=1;
     return number;
 }
 
 - (NSInteger) addNumber:(NSInteger) number1 toNumber:(NSInteger) number2 {
     /* WORK HERE */
+    number1 += number2;
+    
     return number1;
 }
 
