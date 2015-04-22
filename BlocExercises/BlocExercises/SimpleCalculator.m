@@ -13,7 +13,7 @@
 
 - (NSInteger) increaseNumberBy1:(NSInteger) number {
     /* WORK HERE */
-    number +=1;
+    number += 1;
     return number;
 }
 
