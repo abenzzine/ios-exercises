@@ -10,6 +10,7 @@
 
 @implementation SimpleCalculator
 
+
 - (NSInteger) increaseNumberBy1:(NSInteger) number {
     /* WORK HERE */
     number +=1;
