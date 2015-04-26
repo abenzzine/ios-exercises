@@ -12,7 +12,12 @@
 
 - (NSArray *) arrayOfStarTrekCharactersFromString:(NSString *)characterString {
     /* WORK HERE */
-    return @[];
+    NSArray *myarray = [[NSArray alloc] init];
+    for(NSUInteger i = 0 ; i < characterString.length; i++){
+    
+        myarray[i] = [characterString characterAtIndex:i];
+        
+    }
 }
 
 - (NSString *) stringOfStarTrekCharactersFromArray:(NSArray *)characterArray {

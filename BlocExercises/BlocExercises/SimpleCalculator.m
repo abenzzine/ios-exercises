@@ -25,8 +25,14 @@
 
 - (NSInteger) remainderOfNumber:(NSInteger) dividend dividedByNumber:(NSInteger) divisor {
     /* WORK HERE */
-    
-    return 0;
+    // %
+    NSInteger remainder = dividend % divisor ;
+    if(remainder > 0){
+        return  remainder;
+    }else{
+        
+        return 0 ;
+    }
 }
 
 @end
