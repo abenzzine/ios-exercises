@@ -33,6 +33,10 @@
  */
 - (void) rememberThisArrayForLater:(NSMutableArray *)arrayToRemember;
 
+
+@property (nonatomic, strong) NSMutableArray *arrayToRemember;
+@property (nonatomic, copy) NSMutableArray *arrayToCopy;
+@property (nonatomic, assign) CGFloat floatToRemember;
 /**
  Provides the remembered mutable array.
  

@@ -12,15 +12,23 @@
 
 - (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
     /* WORK HERE */
-    NSInteger  param1 = number;
-    NSInteger  param2 = otherNumber;
-    NSString *result;
-    for(NSInteger i = param1 ; param1 <= i <= param2 ; i++){
-    //result =    [result stringByAppendingString:[NSString stringWithFormat:@"%li", (long)param1 + 1]];
-//
+    
+    // swap number and otherNumber if other number is less than number
+    
+    if (number > otherNumber) {
+        NSInteger temp = number;
+        number = otherNumber;
+        otherNumber = temp;
     }
-//    NSLog(@"the result is : " , result);
-    return @"";
+    
+    NSMutableString *myString = [NSMutableString stringWithString:@""];
+    
+    for (NSInteger i = number; i <= otherNumber; i++) {
+        [myString appendFormat:@"%ld", (long)i];
+    }
+    
+    
+    return myString;
 }
 
 @end
