@@ -11,7 +11,7 @@ func favoriteCheeseStringWithCheese(cheese: String) -> String {
     return cheese
 }
 
-let fullSentence = favoriteCheeseStringWithCheese("cheddar")
+let fullSentence = favoriteCheeseStringWithCheese("My favorite cheese is cheddar.")
 // Make fullSentence say "My favorite cheese is cheddar."
 
 /*
@@ -23,6 +23,9 @@ Arrays & Dictionaries
 let numberArray = [1, 2, 3, 4]
 // Add 5 to this array
 // WORK HERE
+
+let numberArray[4] = 5;
+
 
 let numberDictionary = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
 // Add 5 : "five" to this dictionary
