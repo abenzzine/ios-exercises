@@ -12,17 +12,22 @@
 
 - (NSString *)favoriteDrinkForStarTrekCharacterDictionary:(NSDictionary *)characterDictionary {
     /* WORK HERE */
-    return @"";
+   return characterDictionary[@"favorite drink"];
 }
 
 - (NSArray *)arrayOfFavoriteDrinksForStarTrekCharacters:(NSArray *)charactersArray {
     /* WORK HERE */
-    return @[];
+    return [charactersArray valueForKey:@"favorite drink"];
+
 }
 
 - (NSDictionary *)dictionaryWithQuoteAddedToStarTrekCharacterDictionary:(NSDictionary *)characterDictionary {
     /* WORK HERE */
-    return @{};
+    
+    NSMutableDictionary *addtoCharacterDictionary = [characterDictionary mutableCopy];
+    addtoCharacterDictionary[@"quote"] = @"Nothing happens unless there is a dream.";
+    
+    return addtoCharacterDictionary;
 }
 
 @end
